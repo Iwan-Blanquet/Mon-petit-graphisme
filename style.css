@@ -1,29 +1,59 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin: 10px;
+    margin: 0;
 }
-header{
-    margin-bottom: 10px;
+
+/* Header */
+
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
 
+nav img {
+    height: 80px;
 }
-ul{
+
+nav ul {
     display: flex;
-    justify-content: space-around;
     list-style: none;
-    
 }
-li{
-    margin: 10px;
-    padding: 10px;
+
+nav li {
+    margin: 0 10px 0 20px;
 }
-a{
-    text-decoration: none;
+
+/* Main */
+
+/* Banner */
+
+#banner {
+    position: relative;
 }
-.background{
-    height: 300px;
-    background-image: url("images/backgroung_image.jpg");
-    background-size: 100% 100%;
+
+#banner_img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#banner_content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner_content img {
+    height: 60px;
+}
+
+#banner_content h1 {
+    color: white;
+    font-weight: 400;
 }
